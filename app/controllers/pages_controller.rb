@@ -8,6 +8,7 @@ class PagesController < ApplicationController
 
     @targets = []
     @targets = params[:target][:ids] if params[:target]
+    @the_targets = @targets
 
     # if user_terms
     #   @usersearch = Page.search do
